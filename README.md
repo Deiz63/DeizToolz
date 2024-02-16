@@ -31,7 +31,7 @@ Type existing / new key or press enter to leave as is.
 Third prompt will take a new key for the "PAYLOAD" portion, or press Enter for no change. 
 Fourth prompt will take new value for the key input above, or press Enter for no change.
 
-NOTE: Thi wil not provide an acccurate signature, if values change. 
+NOTE: This will not provide an acccurate signature, if values change. 
 Signature will be ignored, Copy original signature to the end of new JWT on output if 3 part format is required.
 
 example:
