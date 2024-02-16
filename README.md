@@ -8,9 +8,16 @@ Hope that this may help others in the same way, or at least as a starting point 
 Primarily Python & Javascript files related to security 🤫, authentication, JSON, data transformation, etc. 
 
 includes :
-JWT-Edit-Tool.py : Simple utility for Json Web Tokens to split, decode, and edit the json values.
+1. JWT-alg-none.py : Utility to input JWT, and return 4 variations of alg:none security header.
+JWT-alg-none.py Usage:
+Copy JWT into .py file as JWT = 'PASTE JWT HERE'.
+Run file : python JWT-alg-none.py
+Jwt will be split into 3 portions. Each portion will be split & displayed. The algorithm key value for the header portion will be changed from original value to alg:none. Then the decoded header & payload will be displayed. Signature will be ignored & copied as is, along with a count of the amount of characters displayed. 
+NOTE: alg:none, alg:None, alg:NoNe, alg:NONE. Variations attempt to bypass filters blocking default 'none' algorithm.
 
-Usage:                   (Great for simple editing of JWT values.)
+    
+2. JWT-Edit-Tool.py : Simple utility for Json Web Tokens to split, decode, and edit the json values.
+JWT-Edit-Tool.py Usage:                   (Great for simple editing of JWT values.)
 
 Paste JWT into file : Line 6 : JWT = 'PASTE JWT HERE'.
 Run file : python JWT-Edit-Tool.py
